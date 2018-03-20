@@ -1,6 +1,6 @@
 {
   "name": "koa1-wrapmiddleware",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Record the time spent on each middleware for koa1",
   "main": "index.js",
   "scripts": {

@@ -14,6 +14,12 @@ wrappedKoaMiddleware(app);
 app.use(function*(next) {
   yield next;
   console.log(this.middlewareTakeTime);
+  /**
+   * console
+  [ { num: 3, funcName: '', takeTime: 2 },
+  { num: 2, funcName: 'loggerFunc', takeTime: 4 },
+  { num: 1, funcName: 'xResponseTimeFunc', takeTime: 4 } ]
+  **/
 });
 function* xResponseTimeFunc(next) {
   const start = Date.now();
